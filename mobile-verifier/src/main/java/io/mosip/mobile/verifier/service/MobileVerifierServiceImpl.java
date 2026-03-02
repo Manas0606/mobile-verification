@@ -61,9 +61,9 @@ public class MobileVerifierServiceImpl implements MobileVerifierService {
             throw new ValidationException(MobileVerifierErrorCodes.EMPTY_INPUT);
         }
 
-        if (!idNumber.matches("[0-9]{12}")) {
-            throw new ValidationException(MobileVerifierErrorCodes.INVALID_NATIONAL_ID);
-        }
+        // if (!idNumber.matches("[0-9]{12}")) {
+        //     throw new ValidationException(MobileVerifierErrorCodes.INVALID_NATIONAL_ID);
+        // }
 
         if (phone == null || phone.isBlank()) {
             throw new ValidationException(MobileVerifierErrorCodes.EMPTY_INPUT);
